@@ -1,0 +1,22 @@
+{
+  // ESLint is the only formatter in this project (single quotes, no semicolons).
+  // Prettier is turned off here so the two don't fight over the same files.
+  "prettier.enable": false,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "eslint.useFlatConfig": true,
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+  "files.eol": "\n"
+}
