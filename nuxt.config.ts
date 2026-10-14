@@ -9,8 +9,8 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   runtimeConfig: {
-    // Set via NUXT_DATABASE_URL in .env (Supabase transaction pooler URI)
-    databaseUrl: ''
+    // Supabase transaction pooler URI, read from SUPABASE_DATABASE_URL in .env
+    supabaseDatabaseUrl: process.env.SUPABASE_DATABASE_URL
   },
 
   compatibilityDate: '2026-06-30',
