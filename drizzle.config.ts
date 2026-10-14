@@ -7,6 +7,6 @@ export default defineConfig({
   dialect: 'postgresql',
   casing: 'snake_case',
   dbCredentials: {
-    url: process.env.NUXT_DATABASE_URL!
+    url: process.env.SUPABASE_DATABASE_URL!
   }
 })
